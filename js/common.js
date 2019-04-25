@@ -8,9 +8,10 @@ $(document).ready(function () {
     }
     $(thread).show();
     $(thread).siblings().hide();
+    $('.tab ul li').children().not($('.title')).hide();
   });
   $(document).on('click', '.tab ul li', function () {
+    $('.tab ul li').not($(this)).children().not($('.title')).hide();
     $(this).children().not($('.title')).toggle();
-    $(this).siblings().children().not($('.title')).hide();
   })
 })
