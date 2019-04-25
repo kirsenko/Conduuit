@@ -1,0 +1,1956 @@
+.main_sec{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+}
+.dashboard{
+	width: 260px;
+	min-width: 260px;
+	min-height: 150vh;
+	background: #39393b;
+}
+.dashboard header{
+	padding: 15px 15px 0 15px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+}
+.dashboard header .profile_info img{
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	border: 3px solid #767677;
+	margin-right: 15px;
+}
+.dashboard header .profile_info{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-bottom: 35px;
+	position: relative;
+}
+.dashboard header .profile_info .profile_name{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	position: relative;
+}
+.dashboard header .profile_info .profile_name span{
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20px;
+	height: 100%;
+	background-image: url(../images/TriangleDown-white.png);
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: center;
+	cursor: pointer;
+}
+.profile_block{
+	display: none;
+	border-radius: 4px;
+	background-color: rgb(255, 255, 255);
+	-webkit-box-shadow: 0px 2px 54px 0px rgba(14, 15, 17, 0.3);
+	box-shadow: 0px 2px 54px 0px rgba(14, 15, 17, 0.3);
+	width: 247px;
+	height: 142px;
+	position: absolute;
+	top: 100%;
+	left: -10px;
+	z-index: 111;
+}
+.profile_block ul{
+	list-style: none;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	height: 100%;
+	padding-left: 15px;
+}
+.profile_block ul li a{
+	font-size: 15px;
+	font-family: 'PT Sans', sans-serif;
+	color: rgb(53, 53, 55);
+	padding: 10px;
+}
+.profile_block ul li a:hover{
+	color: rgb(147, 198, 67);
+	text-decoration: none;
+}
+.dashboard header .profile_block ul li div{
+	display: inline-block;
+	margin-right: 15px;
+	width: 25px;
+}
+.dashboard header .profile_block ul li img{
+	height: 20px;
+	width: auto;
+	border: none;
+
+	border-radius: 0;
+}
+.profile_block ul li img.hover{
+	display: none;
+}
+/*
+.profile_block ul li:hover img{
+	display: none;
+}
+.profile_block ul li:hover img.hover{
+	display: inline-block;
+	}
+	*/
+	.dashboard header .profile_info .profile_name p{
+		margin: 0;
+		padding: 0;
+		color: rgb(255, 255, 255);
+		font-family: "Open Sans";
+		font-weight: bold;
+	}
+	.dashboard header .profile_info .profile_name p.welcome{
+		font-size: 20px;
+
+	}
+	.dashboard header .profile_info .profile_name p.name{
+		font-size: 16px;
+	}
+	.dashboard header p.subtitle{
+		font-size: 13px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgba(255, 255, 255, 0.11);
+		text-transform: uppercase;
+		margin-bottom: 5px;
+		padding: 0;
+	}
+	.dashboard nav{
+		padding: 10px 15px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+	}
+	.dashboard nav ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.dashboard nav ul li a{
+		font-size: 15px;
+		font-family: "Open Sans";
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+	.dashboard nav ul li.active a{
+		color: rgb(147, 198, 67);
+	}
+	.dashboard nav ul li a:hover{
+		color: rgb(147, 198, 67);
+		text-decoration: none;
+	}
+	.dashboard nav ul li a img{
+		margin-right: 15px;
+		height: 25px;
+		width: 22px;
+	}
+	.dashboard .tips{
+		padding: 30px 15px 0;
+	}
+	.dashboard .tips p{
+		font-size: 14px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(255, 255, 255);
+	}
+	.dashboard .tips p a{
+		text-decoration: underline;
+		color: inherit;
+	}
+	.dashboard .tips .title{
+		font-size: 19px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+	}
+	main{
+		background: #F6F6F6;
+		-webkit-flex: 1 1 auto;
+		-moz-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		-o-flex: 1 1 auto;
+		-webkit-box-flex: 1;
+		flex: 1 1 auto;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		padding: 20px 20px 40px;
+		position: relative;
+		min-height: 150vh;
+		min-width: 900px;
+	}
+	main header{
+		text-align: center;
+	}
+	main header h1{
+		position: relative;
+		display: inline-block;
+	}
+	main.resume_manager header{
+		background: #fff;
+		border-width: 2px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		border-radius: 4px;
+		padding: 30px;
+	}
+	main.resume_manager.preview header,
+	main.resume_manager.dashbrd header{
+		border: none;
+		background: none;
+		padding-bottom: 0;
+	}
+	main.resume_manager.preview header h1{
+		margin-bottom: 10px;
+	}
+	main.resume_manager header h1{
+		font-size: 30px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(57, 57, 59);
+		line-height: 1.2;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+	}
+	main.resume_manager header #add_resume{
+		border-width: 1px;
+		border-color: rgb(138, 0, 178);
+		border-style: solid;
+		background: none;
+		padding: 10px 15px;
+		padding-left: 45px;
+		font-size: 18px;
+		line-height: 18px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(138, 0, 178);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.2;
+		display: block;
+		margin: 0 auto;
+		width: 180px;
+		position: relative;
+	}
+	main.resume_manager header #add_resume:before{
+		content: "+";
+		position: absolute;
+		left: 10px;
+		top: 0;
+		width: 20px;
+		height: 100%;
+		font-size: 34px;
+		text-align: center;
+		font-weight: normal;
+		vertical-align: middle;
+	}
+	main.resume_manager header #add_resume:hover{
+		background-color: rgb(138, 0, 178);
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+	}
+	main .table_wrapp{
+		position: relative;
+		width: 100%;
+		height: -webkit-calc(100% - 190px);
+		height: calc(100% - 190px);
+		background: #fff;
+		border-width: 2px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		border-radius: 4px;
+		margin-top: 10px;
+	}
+	main.resume_manager .resume_table{
+		display: table;
+		width: 100%;
+		position: relative;
+	}
+	main.resume_manager .resume_table .th{
+		display: table-header-group;
+		height: 55px;
+		clear: both;
+	}
+	main.resume_manager .resume_table .tr{
+		display: table-row;
+		position: relative;
+	}
+	main.resume_manager .resume_table .td{
+		display: table-cell;
+		font-size: 15px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(32, 32, 32);
+		line-height: 1.2;
+		text-align: left;
+		z-index: 1;
+		position: relative;
+		padding: 0 15px;
+		border-bottom: 1px solid rgb(232, 232, 232);
+		vertical-align: middle;
+		height: 70px;
+	}
+	main.resume_manager .resume_table .th .td{
+		text-align: center;
+		padding: 20px 10px 15px;
+		font-size: 15px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(122, 122, 122);
+		border-bottom: 1px solid rgb(232, 232, 232);
+		background-color: #f6f6f6;`
+		height: 70px;
+	}
+	main.resume_manager .resume_table  .td.actions{
+		width: 20%;
+		text-align: right;
+	}
+	main.resume_manager .resume_table  .td.actions a:hover{
+		border-radius: 3px;
+		background-color: rgb(246, 246, 246);
+		text-decoration: none;
+		color: rgb(87, 85, 85);
+	}
+	main.resume_manager .resume_table  .td.actions a{
+		font-size: 16px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(160, 160, 160);
+		line-height: 1.2;
+		padding: 3px 5px;
+		margin-left: 10px;
+		width: 50px;
+		text-transform: capitalize;
+	}
+	main.resume_manager  .empty_bg{
+		position: absolute;
+		left: 2px;
+		top: 60px;
+		width: -webkit-calc(100% - 4px);
+		width: calc(100% - 4px);
+		height: -webkit-calc(100% - 65px);
+		height: calc(100% - 65px);
+		background: url(../images/lone_eagle/empty_table_bg.png);
+		background-repeat: no-repeat;
+		background-size: 400px 250px;
+		background-position: center;
+		display: block;
+		min-height: 400px;
+	}
+	main.resume_manager  .empty_bg .title_bg{
+		font-size: 30px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(188, 188, 188);
+		line-height: 1.2;
+		text-align: center;
+		margin-top: 100px;
+	}
+	main.resume_manager.preview .content_wrapp{
+		border-width: 2px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		border-radius: 4px;
+		background-color: rgb(246, 246, 246);
+		padding: 10px 15px;
+	}
+	.resume_manager.preview .content_wrapp .control_panel{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.resume_manager.preview .content_wrapp .control_panel .prev{
+		font-size: 18px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(106, 106, 106);
+
+	}
+	.resume_manager.preview .content_wrapp .control_panel .prev .fa{
+		font-size: 16px;
+		margin-right: 10px;
+	}
+	.resume_manager.preview .content_wrapp .control_panel .btns a{
+		font-size: 18px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(106, 106, 106);
+		font-weight: bold;
+		text-align: center;
+		border-width: 2px;
+		border-color: rgb(225, 225, 225);
+		border-style: solid;
+		background-color: rgb(232, 232, 232);
+		padding: 5px;
+		display: inline-block;
+		width: 190px;
+		margin-left: 20px;
+	}
+	.resume_manager.preview .content_wrapp .control_panel .btns a:hover{
+		color: rgb(255, 255, 255);
+		border-width: 2px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		background-color: rgb(147, 179, 67);
+		text-decoration: none;
+	}
+	.resume_manager.preview .content_wrapp .control_panel .btns a span{
+		font-size: 30px;
+		line-height: 18px;
+	}
+	.resume_manager.preview .content_wrapp .control_panel .btns a#edit_resume span{
+		margin-right: 10px;
+	}
+	.resume_manager.preview .content_wrapp .control_panel .btns a#resume span{
+		margin-left: 10px;
+	}
+	.resume_manager.preview .content_wrapp .resume_content{
+		border-radius: 4px;
+		background-color: rgb(255, 255, 255);
+		padding: 25px 15px;
+		margin-top: 10px;
+
+	}
+	.resume_manager.preview .content_wrapp .resume_content .name{
+		font-size: 33px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(57, 57, 59);
+		font-weight: bold;
+		line-height: 1.2;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .short_info{
+		padding: 10px;
+		border-width: 2px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		border-radius: 4px;
+		background-color: rgb(255, 255, 255);
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .short_info .about{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .short_info .about img{
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		margin-right: 10px;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .short_info .about div{
+		padding-top: 5px;
+		margin-right: 40px;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .short_info .about p{
+		font-family: 'PT Sans', sans-serif;
+		padding: 0;
+		margin: 0;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .short_info .about p.proff{
+		font-size: 16px;
+		color: rgb(57, 57, 59);
+		font-weight: bold;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .short_info .about p.locate{
+		font-size: 15px;
+		color: rgb(50, 50, 50);
+	}
+	.resume_manager.preview .content_wrapp .resume_content .short_info .about p.mail{
+		font-size: 16px;
+		color: rgb(57, 57, 59);
+	}
+	.resume_manager.preview .content_wrapp .resume_content .short_info .about p.linkIn{
+		font-size: 16px;
+		color: rgb(0, 122, 185);
+	}
+	.resume_manager.preview .content_wrapp .resume_content .short_info .about p .fa{
+		font-size: 14px;
+		font-weight: normal;
+		margin-right: 10px;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .short_info .salary_download p{
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+		margin-left: 30px;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .short_info .salary_download p.salary{
+		font-size: 16px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(57, 57, 59);
+	}
+	.resume_manager.preview .content_wrapp .resume_content .short_info .salary_download p.download a{
+		font-size: 16px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(57, 57, 59);
+		text-decoration: underline;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .short_info .salary_download p.download img{
+		margin-right: 10px;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .video{
+		width: 300px;
+		height: 170px;
+		margin: 20px 10px;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .video *{
+		width: 100%;
+		height: 100%;
+	}
+	.resume_manager.preview .content_wrapp .resume_content hr{
+		border-top: 1px solid rgb(232, 232, 232);
+		margin: 0 -15px;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .description_text{
+		padding: 25px 15px;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .description_text .generic{
+		font-size: 16px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(108, 108, 108);
+	}
+	.resume_manager.preview .content_wrapp .resume_content .description_text div{
+		margin-bottom: 30px;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .description_text ul.skills{
+		margin: 0;
+		padding: 0;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .description_text .title{
+		font-size: 18px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(32, 32, 32);
+		list-style: none;
+		margin-bottom: 10px;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .description_text .text{
+		font-size: 15px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(163, 163, 163);
+		margin-left: 30px;
+	}
+	.resume_manager.preview .content_wrapp .resume_content .description_text .text.url a{
+		font-size: 15px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(144, 196, 61);
+	}
+	.resume_manager.preview .content_wrapp .resume_content .description_text .text p{
+		margin-left: 20px;
+	}
+	.check_level input{
+		display: none;
+	}
+	.check_level label{
+		display: block;
+		margin-left: 30px;
+		margin-bottom: 0;
+		padding-top: 5px;
+		padding-left: 20px;
+		border-left: 1px solid rgb(186, 186, 186);
+		position: relative;
+		cursor: pointer;
+		font-size: 16px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(34, 34, 34);
+	}
+	.check_level label:hover{
+		color: rgb(68, 68, 68);
+		font-weight: bold;
+	}
+	.check_level label span{
+		width: 15px;
+		height: 15px;
+		display: none;
+		border-radius: 50%;
+		background-color: rgb(225, 225, 225);
+		position: absolute;
+		left: -8px;
+		top: 10px;
+	}
+	.check_level input:checked + label{
+		font-size: 14px;
+		color: rgb(163, 163, 163);
+		text-transform: uppercase;
+	}
+	.check_level input:checked + label>span{
+		display: block;
+	}
+	main.dashbrd header h1 a{
+		position: absolute;
+		left: -50px;
+		top: 3px;
+		width: 30px;
+		height: 30px;
+		font-size: 36px;
+		padding-top: 1px;
+		cursor: pointer;
+		line-height: 24px;
+		color: #fff;
+		border-radius: 50%;
+		background-color: rgb(138, 0, 178);
+		border: 1px solid rgb(138, 0, 178);
+	}
+	main.dashbrd header h1 a:hover{
+		background-color: #fff;
+		color: rgb(138, 0, 178);
+		text-decoration:  none;
+	}
+	main.dashbrd .content_wrapp{
+		background-color: #fff;
+		border-width: 2px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		border-radius: 4px;
+		padding: 10px 15px;
+	}
+	main.dashbrd .applied_jobs_item header{
+		text-align: left;
+		padding: 10px 0;
+	}
+	.applied_jobs_item header img{
+		margin-right: 20px;
+		width: 57px;
+		height: 57px;
+	}
+	.applied_jobs_item .headers,
+	.applied_jobs_item .headers .subtitle *{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.applied_jobs_item .headers .title{
+		font-size: 20px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(157, 192, 70);
+		font-weight: bold;
+	}
+	.applied_jobs_item .headers .subtitle *{
+		margin-right: 15px;
+		vertical-align: middle;
+	}
+	.applied_jobs_item .headers .subtitle{
+		font-size: 15px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(108, 108, 108);
+	}
+	.applied_jobs_item .categ{
+		font-size: 17px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(57, 57, 59);
+	}
+
+	.applied_jobs_item .headers .subtitle  img{
+		height: 14px;
+		width: auto;
+		margin-right: 5px;
+		margin-top: -5px;
+	}
+	.applied_jobs_item .long_description{
+		display: none;
+	}
+	.applied_jobs_item footer{
+		background: none;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		padding-top: 10px;
+	}
+	.applied_jobs_item footer .line{
+		border-bottom: 1px solid rgb(232, 232, 232);
+		height: 1px;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+		-webkit-align-self: flex-end;
+		-ms-flex-item-align: end;
+		align-self: flex-end;
+		margin-left: -15px;
+		margin-right: 10px;
+	}
+	.applied_jobs_item footer .view_more{
+		float: right;
+	}
+	main.dashbrd .content_wrapp .pagination{
+		margin-top: 30px;
+	}
+	main.dashbrd .content_wrapp .pagination li:first-child:hover,
+	main.dashbrd .content_wrapp .pagination li:last-child:hover{
+		border-width: 1px;
+		border-color: rgb(225, 225, 225);
+		border-style: solid;
+		background-color: rgb(232, 232, 232);
+		color: rgb(106, 106, 106);
+	}
+	main.dashbrd .content_wrapp .pagination .active{
+		background: rgb(150, 200, 73);
+		border-color: rgb(150, 200, 73);
+		color: #fff;
+	}
+	main.dashbrd .content_wrapp.job_matches{
+		margin-top: 20px;
+	}
+	.job_matches form#job_match fieldset{
+		width: 100%;
+		position: relative;
+		text-align: justify;
+	}
+	.job_matches form#job_match fieldset select{
+		padding: 5px 10px;
+		border-width: 2px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		border-radius: 4px;
+		background-color: rgb(255, 255, 255);
+		font-size: 15px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(122, 122, 122);
+		-webkit-appearance: none;
+		/* for FF */
+		-moz-appearance: none;
+		text-indent: 0.01px; 
+		text-overflow: '';
+		/* for IE */
+		-ms-appearance: none;
+		appearance: none;
+		position: relative;
+		background: url(../images/TriangleDown-512.png);
+		background-size: 10px;
+		background-position: right center;
+		background-origin: content-box;
+		background-repeat: no-repeat;
+		margin-right: 1px;
+	}
+	.job_matches form#job_match fieldset #keywords{
+		width: 50%;
+	}
+	.job_matches form#job_match fieldset #state{
+		width: 24%;
+	}
+	.job_matches form#job_match fieldset #city{
+		width: 24%;
+	}
+	.job_matches form#job_match fieldset.check{
+		margin: 20px 0 10px;
+	}
+	.job_matches form#job_match fieldset.check div{
+		display: inline-block;
+	}
+	.job_matches form#job_match fieldset.check label{
+		font-size: 14px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(122, 122, 122);
+		margin-right: 10px;
+	}
+	.job_matches form#job_match fieldset.check label span{
+		font-size: 17px;
+		color: rgb(212, 212, 212);
+		display: inline-block;
+		position: relative;
+		width: 15px;
+		height: 15px;
+	}
+	.job_matches form#job_match fieldset.check label span .fa{
+		position: absolute;
+		left: 0;
+		top: 2px;
+	}
+	.job_matches form#job_match fieldset.check input + label span .fa:first-child{
+		display: block;
+	}
+	.job_matches form#job_match fieldset.check input + label span .fa:last-child{
+		display: none;
+	}
+	.job_matches form#job_match fieldset.check input:checked + label span{
+		color: rgb(157, 192, 70);
+		font-size: 16px;
+	}
+	.job_matches form#job_match fieldset.check input:checked + label span .fa:first-child{
+		display: none;
+	}
+	.job_matches form#job_match fieldset.check input:checked + label span .fa:last-child{
+		display: block;
+	}
+	.job_matches form#job_match fieldset.check input{
+		display: none;
+	}
+	form#job_match .check label::before {
+		content: none;
+
+	}
+	select.chosen-select{
+		width: 99%;
+		border-width: 2px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		border-radius: 4px;
+		background-color: rgb(246, 246, 246);
+		-webkit-appearance: none;
+		/* for FF */
+		-moz-appearance: none;
+		text-indent: 0.01px; 
+		text-overflow: '';
+		/* for IE */
+		-ms-appearance: none;
+		appearance: none;
+		position: relative;
+		background: url(../images/TriangleDown-512.png);
+		background-size: 10px;
+		background-position: right center;
+		background-origin: content-box;
+		background-repeat: no-repeat;
+		/*	padding: 5px 10px;*/
+		margin-top: 10px;
+		height: 30px;
+	}
+	[id$="_chosen"]{
+		border-width: 2px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		border-radius: 4px;
+		background-color: rgb(246, 246, 246);
+		background-image: url(../images/TriangleDown-512.png);
+		background-size: 10px;
+		background-position: right center;
+		background-origin: content-box;
+		background-repeat: no-repeat;
+		margin-top: 10px;
+		-webkit-appearance: none;
+		/* for FF */
+		-moz-appearance: none;
+		text-indent: 0.01px; 
+		text-overflow: '';
+		/* for IE */
+		-ms-appearance: none;
+		appearance: none;
+		padding: 5px 10px;
+		max-width: -webkit-calc(100% - 5px) !important;
+		max-width: calc(100% - 5px) !important;
+	}
+	.chosen-container-multi .chosen-choices{
+		border: none !important;
+		background: none !important;
+	}
+	.chosen-container-active .chosen-choices{
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+	}
+	.chosen-container-multi .chosen-choices li.search-choice{
+		background: #fff;
+		border-width: 1px;
+		border-color: rgb(225, 225, 225);
+		border-style: solid;
+		border-radius: 3px;
+	}
+	.chosen-container-multi .chosen-choices li.search-choice span{
+		font-size: 15px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(122, 122, 122);
+	}
+	.chosen-container-multi .chosen-choices li.search-field input[type="text"]{
+		height: 25px !important;
+	}
+	.for_filter{
+		margin-top: 15px;
+	}
+	.for_filter .empty{
+		width: 100%;
+		min-height: 200px;
+		text-align: center;
+		padding: 50px 0;
+		font-size: 30px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(188, 188, 188);
+	}
+	.soc_item{
+		cursor: pointer;
+		margin-bottom: 35px;
+	}
+	.soc_item img{
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		margin-right: 15px;
+	}
+	.soc_item .text{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.soc_item .sub *{
+		display: inline-block;
+		margin-right: 10px;
+	}
+	.soc_item .title{
+		font-size: 17px;
+		font-family: "Open Sans";
+		color: rgb(38, 38, 38);
+	}
+	.soc_item:hover .title{
+		color: rgb(150, 200, 73);
+	}
+	.soc_item .sub{
+		font-size: 12px;
+		font-family: "Open Sans";
+		color: rgb(160, 160, 160);
+	}
+	.soc_item .categ{
+		text-decoration: underline;
+	}
+	.soc_item .last_reply_by span:first-child{
+		color: rgb(150, 200, 73);
+		margin-left: 10px;
+	}
+	.soc_item .last_reply_by span:last-child{
+		color: #000;
+		margin-left: 10px;
+	}
+	.soc_item .sub .fa{
+		color: rgb(150, 200, 73);
+		margin-right: 5px;
+	}
+	#soc_net{
+		font-size: 17px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+		border-width: 1px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		background-color: rgb(138, 0, 178);
+		padding: 10px;
+		width: 220px;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 30px;
+	}
+	#soc_net:hover{
+		background-color: #fff;
+		color: rgb(138, 0, 178);
+		text-decoration: none;
+		border-color: rgb(138, 0, 178);
+	}
+	main.resume_manager .resume_table.job_alerts .td{
+		padding: 20px 15px;
+		text-align: center;
+	}
+	main.resume_manager .resume_table.job_alerts .td.time{
+		font-size: 15px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(108, 108, 108);
+		width: 150px;
+		text-align: left;
+	}
+	main.resume_manager .resume_table.job_alerts .td.time .btns_alert{
+		margin-top: 30px;
+		display: none;
+	}
+	main.resume_manager .resume_table.job_alerts .td.time:hover .btns_alert{
+		display: block;
+	}
+	main.resume_manager .resume_table.job_alerts .td.time .btns_alert a{
+		font-size: 16px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(160, 160, 160);
+		line-height: 1.2;
+		margin-right: 12px;
+		padding: 3px 5px;
+	}
+	main.resume_manager .resume_table.job_alerts .td.time .btns_alert a:hover{
+		border-radius: 3px;
+		background-color: rgb(246, 246, 246);
+		text-decoration: none;
+	}
+	main.resume_manager.preview .content_wrapp.add_alerts{
+		background-color: #fff;
+		padding: 0;
+	}
+	.add_alerts form fieldset{
+		padding: 20px 10px 10px 40px;
+		border-bottom: 1px solid rgb(232, 232, 232);
+	}
+	.add_alerts form label{
+		font-size: 17px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(50, 50, 50);
+		font-weight: bold;
+		width: 260px;
+	}
+	.add_alerts form label span{
+		font-size: 15px;
+		color: rgb(184, 184, 184);
+		font-weight: normal;
+	}
+	.add_alerts form input,
+	.add_alerts form select{
+		max-width: -webkit-calc(100% - 270px);
+		max-width: calc(100% - 270px);
+		width: 100%;
+		font-size: 15px;
+		font-family: 'PT Sans', sans-serif;
+		border-width: 2px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		border-radius: 4px;
+		padding: 5px 10px;
+	}
+	.add_alerts form select{
+		background-color: rgb(246, 246, 246);
+		-webkit-appearance: none;
+		/* for FF */
+		-moz-appearance: none;
+		text-indent: 0.01px; 
+		text-overflow: '';
+		/* for IE */
+		-ms-appearance: none;
+		appearance: none;
+		position: relative;
+		background: url(../images/TriangleDown-512.png);
+		background-size: 10px;
+		background-position: right center;
+		background-origin: content-box;
+		background-repeat: no-repeat;
+		color: rgb(122, 122, 122);
+	}
+	.add_alerts form select[id^="Location"]{
+		max-width: -webkit-calc((100% - 275px) / 2);
+		max-width: calc((100% - 275px) / 2);
+	}
+	.add_alerts [id$="_chosen"]{
+		margin-top: 0;
+	}
+	.add_alerts form  select#Email_Frequency{
+		background-color: rgb(246, 246, 246);
+	}
+	.add_alerts form  fieldset.for_btns{
+		text-align: right;
+		margin-bottom: 30px;
+		border-bottom: none;
+	}
+	form .for_btns [type="submit"]{
+		border-width: 1px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		background-color: rgb(147, 179, 67);
+		font-size: 18px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(255, 255, 255);
+		width: 190px;
+		text-align: center;
+		padding: 5px 10px;
+		cursor: pointer;
+		margin-right: 25px;
+	}
+	form .for_btns [type="submit"]:hover{
+		background-color: #fff;
+		color: rgb(147, 179, 67);
+		border-color: rgb(147, 179, 67);
+	}
+	form .for_btns [type="submit"] .fa{
+		margin-right: 30px;
+	}
+	form .for_btns [type="reset"]{
+		border-width: 1px;
+		border-color: rgb(225, 225, 225);
+		border-style: solid;
+		background-color: rgb(232, 232, 232);
+		font-size: 18px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(106, 106, 106);
+		font-weight: bold;
+		width: 190px;
+		text-align: center;
+		padding: 5px 10px;
+		cursor: pointer;
+	}
+	form .for_btns [type="reset"]:hover{
+		background: #c7c7c7;
+		border-color: #c7c7c7;
+	}
+	.resume_manager.preview header .navigation{
+		text-align: left;
+		margin-bottom: 20px;
+	}
+	.resume_manager.preview header .navigation a{
+		font-size: 16px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(0, 0, 0);
+		margin-right: 10px;
+	}
+	.resume_manager.preview header .navigation a:hover span{
+		text-decoration: underline;
+		-webkit-text-decoration-color: #F6F6F6;
+		text-decoration-color: #F6F6F6;
+	}
+	.resume_manager.preview header .navigation a.prev span{
+		margin-right: 10px;
+	}
+	.resume_manager.preview header .navigation a.next span{
+		margin-left: 10px;
+	}
+	.content_wrapp#job_detail{
+		background: #fff;
+		padding: 50px 20px;
+	}
+	.content_wrapp#job_detail header{
+		padding: 0;
+		text-align: left;
+		margin-bottom: 45px;
+	}
+	.content_wrapp#job_detail header .header_text{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.content_wrapp#job_detail header img.job_img{
+		margin-right: 20px;
+	}
+	.content_wrapp#job_detail header .title{
+		font-size: 34px;
+		font-family: 'Open Sans', sans-serif;
+		color: rgb(32, 32, 32);
+		font-weight: 300;
+		line-height: 34px;
+		margin-bottom: 20px;
+	}
+	.content_wrapp#job_detail header .subtitle .author{
+		font-size: 17px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(54, 54, 56);
+		border-width: 1px;
+		border-color: rgb(226, 226, 227);
+		border-style: solid;
+		border-radius: 5px;
+		background-color: rgb(222, 222, 222);
+		padding: 0 3px;
+	}
+	.content_wrapp#job_detail header .subtitle *{
+		display: inline-block;
+		margin-right: 20px;
+		vertical-align: middle;
+	}
+
+	.content_wrapp#job_detail header .subtitle * img{
+		margin-right: 7px;
+	}
+	.content_wrapp#job_detail header .subtitle .rate,
+	.content_wrapp#job_detail header .subtitle .locate{
+		font-size: 15px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(108, 108, 108);
+	}
+	.content_wrapp#job_detail .job_description{
+		font-size: 16px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(108, 108, 108);
+		line-height: 1.2;
+		margin-bottom: 40px;
+	}
+	.content_wrapp#job_detail .job_description .title{
+		font-weight: bold;
+	}
+	.app_job{
+		position: relative;
+		max-width: 275px;
+		padding: 25px 0;
+	}
+	.submit_res{
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 75px;
+		background: #fff;
+		border: 1px solid rgb(226, 226, 227);
+		border-radius: 6px;
+		width: 500px;
+		padding: 10px;
+	}
+	.apply_job:hover + .submit_res,
+	.app_job:hover >.submit_res,
+	.submit_res:hover{
+		display: block;
+	}
+	.submit_res::before, .submit_res::after {
+		content: ''; 
+		position: absolute;
+		right: 20px; 
+		top: -20px;
+		border: 10px solid transparent;
+		border-bottom: 10px solid rgb(226, 226, 227);
+	}
+	.submit_res::after {
+		border-bottom: 10px solid white;
+		top: -19px; 
+	}
+	.submit_res .submit_resume{
+		width: 271px;
+		display: block;
+		text-align: center;
+		border-radius: 3px;
+		border: 1px solid rgb(147, 179, 67);
+		background-color: rgb(147, 179, 67);
+		font-size: 17px;
+		font-family: 'PT Sans', sans-serif;
+		color: #fff;
+		font-weight: bold;
+		padding: 5px 10px;
+		margin-bottom:15px;
+	}
+	.submit_res .submit_resume:hover{
+		background: #fff;
+		color: rgb(147, 179, 67);
+	}
+	.apply_job{
+		width: 271px;
+		display: block;
+		text-align: center;
+		border-radius: 3px;
+		border: 1px solid rgb(162, 0, 183);
+		background-color: #fff;
+		font-size: 17px;
+		font-family: 'PT Sans', sans-serif;
+		color: rgb(162, 0, 183);
+		font-weight: bold;
+		padding: 5px 10px;
+		margin-bottom: 25px;
+	}
+	.apply_job:hover{
+		background-color: rgb(162, 0, 183);
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+	}
+	.alert_job{
+		font-size: 16px;
+		font-family: "PT Sans";
+		color: rgb(54, 54, 56);
+	}
+	.alert_job:hover{
+		color: #000;
+	}
+	#resume_popup h4{
+		font-size: 24px;
+		font-family: "Open Sans";
+		color: rgb(32, 32, 32);
+		font-weight: 300;
+	}
+	#resume_popup button.close{
+		position: absolute;
+		right: 0px;
+		top: -25px;
+	}
+	#resume_popup  .close {
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 1;
+		color: #fff;
+		text-shadow: none;
+		opacity: 1;
+	}
+	#resume_popup .modal-header{
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		border-bottom: none;
+	}
+	#resume_popup .modal-body{
+		padding: 0;
+	}
+	#resume_popup .resume_item{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		padding: 20px;
+		border-bottom: 1px solid rgb(210, 210, 209);
+	}
+	#resume_popup .resume_item:hover{
+		background-color: rgb(250, 250, 250);
+	}
+	#resume_popup .resume_item .date p{
+		display: inline-block;
+	}
+	#resume_popup .resume_item .date img{
+		margin-right: 10px;
+	}
+	#resume_popup .resume_item .resume_file img{
+		margin-right: 20px;
+	}
+	.bg_green{
+		border: 1px solid rgb(147, 179, 67);
+	}
+	.bg_green:hover,
+	.content_container button.bg_green:hover{
+		color: rgb(147, 179, 67);
+		background: #fff;
+	}
+	.btn_purple{
+		border: 1px solid rgb(162, 0, 183);
+	}
+	.btn_purple:hover{
+		color: rgb(162, 0, 183) !important;
+		background-color: #fff;
+	}
+	.ico_save {
+		width: 100px;
+	}
+	.img_logo_block {
+		width: 182px;
+		height: 182px;
+		position: relative;
+		top: -102px;
+		left: 30px;
+		z-index: 5;
+		background: #868687;
+		border-radius: 50%
+	}
+	.hover_upload_ph{
+		display: block;
+	}
+	.img_logo_block .hover_upload_ph{
+		top: -webkit-calc(50% - 30px);
+		top: calc(50% - 30px);
+		left: -webkit-calc(50% - 15px);
+		left: calc(50% - 15px);
+		width: 30px;
+		height: 30px;
+		background: url(../images/camera_white.png) center center no-repeat;
+		background-size: 100%;
+		color: #fff;
+		padding-top: 15px;
+	}
+	.img_logo_block .hover_upload_ph span{
+		width: 100px;
+		display: block;
+		margin-left: -20px;
+		margin-top: 15px;
+	}
+	main.resume_manager.preview .content_wrapp.white_bg{
+		background-color: #fff;
+		margin-top: 15px;
+	}
+	main.resume_manager.preview .content_wrapp.mem_plans{
+		padding: 75px 10px;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-justify-content: space-around;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+
+	}
+	.plan_item{
+		width: 270px;
+		position: relative;
+		margin: 0 10px;
+	}
+	.plan_item .charge{
+		background-color: rgb(124, 201, 57);
+		width: 80%;
+		min-height: 50px;
+		padding-top: 5px;
+		text-align: center;
+		text-transform: uppercase;
+		display: block;
+		margin: 0 auto;
+		font-size: 16px;
+		font-family: "Open Sans";
+		color: rgb(255, 254, 254);
+		font-weight: bold;
+		line-height: 1.2;
+	}
+	.plan_item.free .charge{
+		padding-top: 15px;
+		background-color: rgb(191, 191, 191);
+	}
+	.plan_item .plan_title{
+		width: -webkit-calc(100% + 30px);
+		width: calc(100% + 30px);
+		font-size: 21px;
+		font-family: "Open Sans";
+		color: rgb(54, 54, 56);
+		border-bottom: 1px solid rgb(226, 226, 227);
+		background-color: rgb(255, 255, 255);
+		text-align: center;
+		text-transform: uppercase;
+		padding-top: 25px;
+		padding-bottom: 20px;
+		margin: 0 -15px;
+	}
+	.plan_item:hover .plan_body{
+		border-color: rgb(124, 201, 57);
+	}
+	.plan_body{
+		padding: 0 15px 15px;
+		margin-top: -1px;
+		border-width: 1px;
+		border-color: rgb(226, 226, 227);
+		border-style: solid;
+		border-radius: 3px;
+	}
+	.plan_body ul{
+		padding: 20px 10px;
+		border-radius: 3px;
+		margin-top: 10px;
+		background-color: rgb(246, 246, 246);
+	}
+	.plan_body ul li{
+		list-style: none;
+		font-size: 14px;
+		font-family: "Open Sans";
+		color: rgb(122, 122, 122);
+		line-height: 1.2;
+		padding-left: 35px;
+		position: relative;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+	.plan_body ul li:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 20px;
+		background: url(../images/plan_check.png) top center no-repeat;
+	}
+	.plan_body .select{
+		border-width: 2px;
+		border-color: rgb(124, 201, 57);
+		border-style: solid;
+		background-color: rgb(255, 255, 255);
+		font-size: 17px;
+		font-family: "PT Sans";
+		color: rgb(106, 106, 106);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.2;
+		text-align: center;
+		display: block;
+		margin: 20px auto;
+		width: 195px;
+		padding: 10px;
+	}
+	.plan_body a.select:hover{
+		background-color: rgb(124, 201, 57);
+		color: #fff;
+		text-decoration: none;
+	}
+	.plan_item.alacarte form{
+		padding: 20px 10px;
+		border-radius: 3px;
+		margin-top: 10px;
+		background-color: rgb(246, 246, 246);
+	}
+	.plan_item.alacarte form input{
+		display: none;
+	}
+	.plan_item.alacarte form label{
+		font-size: 14px;
+		font-family: "Open Sans";
+		color: rgb(122, 122, 122);
+		line-height: 1.2;
+		padding-left: 5px;
+		position: relative;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		margin-bottom: 10px;
+	}
+
+	.plan_item.alacarte form label:before{
+		position: absolute;
+		content: "";
+		left: 0;
+		top: 0;
+		background: url(../images/unchecked.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 13px;
+		height: 13px;
+	}
+	.plan_item.alacarte form  input:checked + label:before{
+		background: url(../images/checked.png);
+		background-size: contain;
+	}
+	.terms{
+		padding-top: 55px;
+		padding-left: 50px;
+		position: relative;
+	}
+	.terms p{
+		font-size: 18px;
+		font-family: "PT Sans";
+		color: rgb(19, 19, 19);
+	}
+	.member_terms.btn_edit_pen{
+		display: block;
+		position: absolute;
+		right: 0px;
+		top: 10px;
+		color: rgb(186, 186, 186);
+		font-size: 15px;
+		text-decoration: none;
+		background: url(../images/pen-grey.png) left 12% center no-repeat;
+		background-size: 17px 15px;
+		width: 100px;
+		padding: 1px 5px 1px 34px;
+	}
+	.member_terms.btn_edit_pen:hover {
+		border-radius: 3px;
+		background-color: rgb(246, 246, 246);
+	}
+	.terms  .terms_of{
+		width: 100%;
+		height: 236px;
+		overflow-y: scroll;
+		font-size: 17px;
+		font-family: "PT Sans";
+		color: rgb(72, 72, 74);
+		border-width: 1px;
+		border-color: rgb(233, 233, 233);
+		border-style: solid;
+		border-radius: 4px;
+		background-color: rgb(246, 246, 246);
+		padding: 10px;
+	}
+	.form_footer{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		margin-top: 25px;
+	}
+	.terms  fieldset.check{
+
+	}
+	.terms  a.submit{
+		border-width: 1px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		background-color: rgb(138, 207, 63);
+		width: 180px;
+		font-size: 16px;
+		font-family: "PT Sans";
+		color: rgb(255, 255, 255);
+		line-height: 1.2;
+		padding: 3px 5px;
+		text-align: center;
+	}
+	.terms  a.submit:hover{
+		background-color: #fff;
+		color: rgb(138, 207, 63);
+		text-decoration: none;
+		border-color: rgb(138, 207, 63);
+	}
+	form .check input[type=checkbox] {
+		display: none;
+	}
+	form .check label[for="check"]{
+		position: relative;
+		padding-left: 35px;
+		font-size: 16px;
+		font-family: "Open Sans";
+		color: rgb(106, 106, 106);	
+		line-height: 1;
+		width: auto;
+		max-width: 100%;
+		font-weight: normal;
+	}
+	form .check label:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 14px;
+		height: 14px;
+		border-width: 1px;
+		border-color: rgb(225, 225, 226);
+		border-style: solid;
+		border-radius: 3px;
+		background-color: rgb(255, 255, 255);
+		color: rgb(150, 200, 73);
+		font-weight: bold;
+	}
+	form .check  input[type=checkbox]:checked + label:before {
+		content: "\2713";
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+		font-size: 15px;
+		text-align: center;
+		line-height: 8px;
+	}
+	#thx_f_ms button.close{
+		position: absolute;
+		right: 0px;
+		top: -25px;
+	}
+	#thx_f_ms  .close {
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 1;
+		color: #fff;
+		text-shadow: none;
+		opacity: 1;
+	}
+	#thx_f_ms .modal-header{
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		border-bottom: none;
+	}
+	#thx_f_ms .modal-body{
+		padding: 20px;
+	}
+	#thx_f_ms .modal-body p{
+		font-size: 17px;
+		font-family: "PT Sans";
+		color: rgb(32, 32, 32);
+		line-height: 1.765;
+	}
+	#thx_f_ms .modal-body p span{
+		font-weight: bold;
+		color: #3E3E3E;
+	}
+	#thx_f_ms .modal-body p.acc{
+		color: #505050;
+	}
+	#thx_f_ms .modal-body p.m_level{
+		color: #76C431;
+	}
+	.acc,.m_level{
+		margin-bottom: 0;
+	}
+	main.resume_manager.preview .content_wrapp.white_bg.no_padd{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	form#add_resume{
+		padding-bottom: 25px; 
+	}
+	form#add_resume fieldset{
+		padding: 15px 25px;
+		width: 100%;
+		border-bottom: 1px solid rgb(232, 232, 232);
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	form#add_resume fieldset label{
+		width: 250px;
+		font-size: 17px;
+		font-family: "PT Sans";
+		color: rgb(46, 46, 46);
+		font-weight: bold;
+		line-height: 1.2;
+		-webkit-align-self: flex-start;
+		-ms-flex-item-align: start;
+		align-self: flex-start;
+		margin-top: 10px;
+	}
+	form#add_resume fieldset label span{
+		color: #D9D9D9;
+	}
+	a.import_from_LN{
+		font-size: 16px;
+		font-family: "PT Sans";
+		color: rgb(255, 255, 255);
+		line-height: 1.2;
+		text-align: center;
+		border-width: 1px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		border-radius: 1px;
+		background-color: rgb(0, 94, 151);
+		width: 180px;
+		padding: 5px 5px;
+	}
+	a.import_from_LN:hover{
+		color: rgb(0, 94, 151);
+		border-color: rgb(0, 94, 151);
+		background-color: #fff;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	form#add_resume fieldset input{
+		border-width: 2px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		border-radius: 4px;
+		background-color: rgb(255, 255, 255);
+		padding: 10px;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+	}
+	form#add_resume fieldset textarea{
+		border-width: 2px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		border-radius: 4px;
+		background-color: rgb(255, 255, 255);
+		padding: 10px;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+		min-height: 180px;
+	}
+	form#add_resume fieldset select{
+		border-width: 2px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		border-radius: 4px;
+		background-color: rgb(255, 255, 255);
+		padding: 10px;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+	}
+	form#add_resume fieldset select{
+		-webkit-appearance: none;
+		/* for FF */
+		-moz-appearance: none;
+		text-indent: 0.01px; 
+		text-overflow: '';
+		/* for IE */
+		-ms-appearance: none;
+		appearance: none;
+		position: relative;
+		background: url(../images/TriangleDown-512.png);
+		background-size: 10px;
+		background-position: right center;
+		background-origin: content-box;
+		background-repeat: no-repeat;
+		color: rgb(122, 122, 122);
+	}
+	form#add_resume fieldset select#Location_state{
+		margin-right: 15px;
+	}
+	form#add_resume fieldset figure{
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+	}
+	form#add_resume fieldset .img_wrap{
+		height: 157px;
+		width: 100%;
+		border-width: 2px;
+		border-color: rgb(232, 232, 232);
+		border-style: dashed;
+		border-radius: 4px;
+		background-color: rgb(255, 255, 255);
+		background-image: url(../images/camera_grey.png);
+		background-size: 50px;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 15px;
+	}
+	form#add_resume fieldset .img_wrap img{
+		height: 100%;
+		max-height: 100%;
+		width: auto;
+	}
+	form#add_resume fieldset label.file_upload{
+		width: auto;
+	}
+	form#add_resume fieldset label.file_upload input{
+		display: none;
+	}
+	form#add_resume fieldset label.file_upload span,
+	form#add_resume fieldset .add p{
+		font-size: 14px;
+		font-family: "PT Sans";
+		color: rgb(122, 122, 122);
+		line-height: 1.2;
+	}
+	form#add_resume fieldset label.file_upload span.button{
+		border-width: 1px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		border-radius: 1px;
+		background-color: rgb(162, 0, 183);
+		font-size: 16px;
+		font-family: "PT Sans";
+		color: rgb(255, 255, 255);
+		line-height: 1.2;
+		text-align: center;
+		padding: 3px 10px;
+		display: inline-block;
+	}
+	form#add_resume fieldset .add{
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+		text-align: left;
+	}
+	form#add_resume fieldset .add a{
+		font-size: 15px;
+		font-family: "PT Sans";
+		color: rgb(138, 207, 63);
+		font-weight: bold;
+		line-height: 1.2;
+	}
+	form#add_resume fieldset .add a:hover{
+		text-decoration: none;
+	}
+	form#add_resume fieldset .res_file_wrap p{
+		font-size: 14px;
+		color: rgb(122, 122, 122);
+		line-height: 1.2;
+		margin-top: 20px;
+	}
+	form#add_resume fieldset .res_file_wrap div{
+		border-width: 2px;
+		border-color: rgb(232, 232, 232);
+		border-style: dashed;
+		border-radius: 4px;
+		background-color: rgb(255, 255, 255);
+		width: 100%;
+		height: 155px;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	form#add_resume fieldset .res_file_wrap div label{
+		-webkit-align-self: center;
+		-ms-flex-item-align: center;
+		-ms-grid-row-align: center;
+		align-self: center;
+		-webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		-ms-filter: grayscale(100%);
+		-o-filter: grayscale(100%);
+		filter: grayscale(100%);
+		-webkit-filter: gray;
+		filter: gray; /* IE 6-9 */
+		opacity: 0.2;
+		width: 55px;
+		height: 75px;
+		margin: 0 15px;
+		-webkit-transition: opacity 0.4s;
+		transition: opacity 0.4s;
+	}
+	form#add_resume fieldset .res_file_wrap div label input{
+		display: none;
+	}
+	form#add_resume fieldset .res_file_wrap div label:hover{
+		-webkit-filter: none;
+		-moz-filter: none;
+		-ms-filter: none;
+		-o-filter: none;
+		filter: none;
+		filter: none; /* IE 6-9 */
+		opacity: 1;
+	}
+	form#add_resume fieldset a.preview{
+		font-size: 18px;
+		font-family: "PT Sans";
+		color: rgb(106, 106, 106);
+		line-height: 1.2;
+		border-width: 1px;
+		border-color: rgb(226, 226, 226);
+		border-style: solid;
+		background-color: rgb(255, 255, 255);
+		padding: 3px 10px;
+	}
+	form#add_resume fieldset a.preview:hover{
+		background-color: rgb(205, 205, 205);
+		text-decoration: none;
+	}
+	form#add_resume fieldset a.preview img{
+		margin: 10px;
+	}
+	form#add_resume fieldset.for_btns{
+		border: none;
+	}
+	hr.green.big{
+		background-color: rgb(138, 207, 63);
+		height: 2px;
+	}
+	a#add_edu{
+		font-size: 15px;
+		font-family: "PT Sans";
+		color: rgb(138, 207, 63);
+		font-weight: bold;
+	}
+	a#add_edu:hover{
+		text-decoration: none;
+	}
